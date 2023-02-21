@@ -1,0 +1,9 @@
+
+### Grep
+
+-r = recursive
+-n = provide line number
+-w = match whole words only
+^ = from the beginning of the line
+
+> grep -rnw /var/www/whatever -e "^.*user_location.*public.*" --color
