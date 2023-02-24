@@ -12,3 +12,11 @@
 
 Monitor MySQL Queries:
 > tail -f /var/log/mysql/mysql.log
+
+### Grep search: 
+> grep -rnw /var/www/html/ATutor -e "^.*user_location.*public.*" --color
+
+### Information Gathering
+
+> echo "<?php var_dump(get_magic_quotes_gpc()); ?>" > info.php
+> echo "<?php echo 'PHP Version: ' . phpversion().\"\r\n\"; ?>" >> info.php
