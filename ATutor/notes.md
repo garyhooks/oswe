@@ -31,6 +31,7 @@ Monitor MySQL Queries:
 
 True:
 > AAAA')/**/or/**/(select/**/1)=1%23
+> select count(*) FROM AT_members M WHERE (first_name LIKE '%AAAA')/**/OR/**/ (select/**/1)=1#
 
 False:
 > AAAA')/**/or/**/(select/**/1)=0%23
