@@ -24,3 +24,11 @@ Monitor MySQL Queries:
 ### SQL inline comments to replace spaces
 
 > mysql> select/**/1;
+
+### SQL Blind Injection Payloads
+
+True:
+> AAAA')/**/or/**/(select/**/1)=1%23
+
+False:
+> AAAA')/**/or/**/(select/**/1)=0%23
