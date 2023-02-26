@@ -20,3 +20,7 @@ Monitor MySQL Queries:
 
 > echo "<?php var_dump(get_magic_quotes_gpc()); ?>" > info.php
 > echo "<?php echo 'PHP Version: ' . phpversion().\"\r\n\"; ?>" >> info.php
+
+### SQL inline comments to replace spaces
+
+> mysql> select/**/1;
