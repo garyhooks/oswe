@@ -27,6 +27,8 @@ Monitor MySQL Queries:
 
 ### SQL Blind Injection Payloads
 
+%23 is # sign, interpreted by MySQL as a comment, terminating the rest of the query
+
 True:
 > AAAA')/**/or/**/(select/**/1)=1%23
 
