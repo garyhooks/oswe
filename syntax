@@ -7,3 +7,11 @@
 ^ = from the beginning of the line
 
 > grep -rnw /var/www/whatever -e "^.*user_location.*public.*" --color
+
+### Find
+
+Find writable directory
+> find /var/www/html/ -type d -perm -o+w
+
+Find a file
+> find / -name "moo.txt"
