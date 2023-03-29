@@ -7,7 +7,7 @@ Tail one line only
 |
 Select-String matching pattern only (to avoid all the other junk)
 
-```
+``
 PS C:\log> Get-Content .\blah.log -wait -tail 1 | Select-String -Pattern "select version"
 ```
 
